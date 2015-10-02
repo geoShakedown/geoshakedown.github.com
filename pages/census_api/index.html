@@ -1,0 +1,35 @@
+<html> 
+<body> 
+
+<script type="text/javascript"> 
+<!-- 
+function GoToLink() 
+{ 
+
+document.location.href = 'http://beh-gis.github.io/pages/census_api/'+document.form.optionType.value;
+} 
+//--> 
+</script> 
+
+
+<form name="form"> 
+<p>Select the Census Data Release type:</p>
+<select name="optionType"> 
+<option value="acs5">ACS 5-Year for 2009 thru 2012 American Community Survey</option> 
+<option value="sf1">SF1 for 2000, 2010 Census</option> 
+<option value="sf3">SF3 for 2000 Census only</option> 
+</select> 
+
+<br /> 
+
+
+
+
+
+<input type="button" onClick="GoToLink();" value="Go!" /> 
+</form> 
+
+
+<p><a href="http://beh-gis.github.io/data/#census">Back to BEH-GIS</a></p>
+</body> 
+</html> 

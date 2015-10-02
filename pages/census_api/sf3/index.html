@@ -1,0 +1,116 @@
+<html> 
+<body> 
+
+<script type="text/javascript"> 
+<!-- 
+function GoToLink() 
+{ 
+// document.location.href = 'www.somesite.com/search/'+document.form.option1.value+'/'+document.form.option2.value;
+// http://api.census.gov/data
+//										/2012/acs5?key=30699f15ab4d04a1e0943715b539d256c9a3ee44&get=B01003_001E&for=tract:*&in=state:36
+document.location.href = 'http://api.census.gov/data/'+document.form.optionYear.value+'/'+document.form.optionType.value+'?key=30699f15ab4d04a1e0943715b539d256c9a3ee44&for='+document.form.optionGeo.value+':*&in=state:'+document.form.optionState.value+'&get='+document.form.optionVariable.value;
+} 
+//--> 
+</script> 
+
+
+
+<form name="form"> 
+
+<select name="optionType"> 
+<option value="sf3">SF3 for 2000 Census only</option> 
+</select> 
+
+<br /> 
+
+<select name="optionYear"> 
+<option value="2000">2000</option> 
+</select> 
+
+<br /> 
+
+</select> 
+<select name="optionGeo"> 
+<option value="tract">Census Tract</option> 
+</select> 
+
+<br /> 
+
+<select name="optionState"> 
+<option value="02">AK</option>
+<option value="01">AL</option>
+<option value="05">AR</option>
+<option value="60">AS</option>
+<option value="04">AZ</option>
+<option value="06">CA</option>
+<option value="08">CO</option>
+<option value="09">CT</option>
+<option value="11">DC</option>
+<option value="10">DE</option>
+<option value="12">FL</option>
+<option value="13">GA</option>
+<option value="66">GU</option>
+<option value="15">HI</option>
+<option value="19">IA</option>
+<option value="16">ID</option>
+<option value="17">IL</option>
+<option value="18">IN</option>
+<option value="20">KS</option>
+<option value="21">KY</option>
+<option value="22">LA</option>
+<option value="25">MA</option>
+<option value="24">MD</option>
+<option value="23">ME</option>
+<option value="26">MI</option>
+<option value="27">MN</option>
+<option value="29">MO</option>
+<option value="28">MS</option>
+<option value="30">MT</option>
+<option value="37">NC</option>
+<option value="38">ND</option>
+<option value="31">NE</option>
+<option value="33">NH</option>
+<option value="34">NJ</option>
+<option value="35">NM</option>
+<option value="32">NV</option>
+<option value="36">NY</option>
+<option value="39">OH</option>
+<option value="40">OK</option>
+<option value="41">OR</option>
+<option value="42">PA</option>
+<option value="72">PR</option>
+<option value="44">RI</option>
+<option value="45">SC</option>
+<option value="46">SD</option>
+<option value="47">TN</option>
+<option value="48">TX</option>
+<option value="49">UT</option>
+<option value="51">VA</option>
+<option value="78">VI</option>
+<option value="50">VT</option>
+<option value="53">WA</option>
+<option value="55">WI</option>
+<option value="54">WV</option>
+<option value="56">WY</option>
+</select> 
+
+<br /> 
+
+<select name="optionVariable"> 
+<option value="P001001">Count (estimate) Population</option>
+</select> 
+
+
+<br /> 
+
+
+
+
+
+<input type="button" onClick="GoToLink();" value="Go!" /> 
+</form> 
+
+
+<p><a href="http://beh-gis.github.io/pages/census_api" >Back</a></p>
+</body> 
+</html> 
