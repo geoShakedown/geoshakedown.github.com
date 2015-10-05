@@ -1,0 +1,41 @@
+<html> 
+<body> 
+
+<script type="text/javascript"> 
+<!-- 
+function GoToLink() 
+{ 
+//document.location.href = 'http://api.census.gov/data/'+document.form.optionYear.value+'/'+document.form.optionType.value+'?key=30699f15ab4d04a1e0943715b539d256c9a3ee44&for='+document.form.optionGeo.value+':*&in=state:'+document.form.optionState.value+'&get='+document.form.optionVariable.value;
+document.location.href = 'http://beh-gis.github.io/pages/census_api/'+document.form.optionType.value+'/'+document.form.optionYear.value;
+} 
+//--> 
+</script> 
+
+
+
+<form name="form"> 
+
+<select name="optionType"> 
+<option value="sf1">SF1 for 2000, 2010 Census</option> 
+</select> 
+
+<br /> 
+
+<select name="optionYear"> 
+<option value="2010">2010</option> 
+<option value="2000">2000</option> 
+</select> 
+
+
+<br /> 
+
+
+
+
+
+<input type="button" onClick="GoToLink();" value="Go!" /> 
+</form> 
+
+<p><a href="http://beh-gis.github.io/pages/census_api" >Back</a></p>
+</body> 
+</html> 

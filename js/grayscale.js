@@ -38,15 +38,16 @@ function init() {
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
-        zoom: 15,
+        zoom: 18,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40.6700, -73.9400), // New York
+        center: new google.maps.LatLng(40.6700, -73.9700), // New York
 
         // Disables the default Google Maps UI components
-        disableDefaultUI: true,
-        scrollwheel: false,
-        draggable: false,
+        disableDefaultUI: false,
+        scrollwheel: true,
+        draggable: true,
+        mapTypeId: google.maps.MapTypeId.SATELLITE,
 
         // How you would like to style the map. 
         // This is where you would paste any style found on Snazzy Maps.
@@ -169,7 +170,7 @@ function init() {
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
+    var myLatLng = new google.maps.LatLng(40.6700, -73.9700);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,
